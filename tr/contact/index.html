@@ -38,39 +38,39 @@
 
   
   <body>
-    <div id="header"><div class="l3k21">
-  <div class="l3k21title">
-    <div class="l3k21titlebody">
-      <div>Arge Atölyesi Web Sitemize Hoşgeldiniz</div>
-
-      <div></div>
-    </div>
-  </div>
-
-  <div class="l3k21body">
-    <a href="/tr"><img src="/img/logo.png" height="70" /></a>
-  </div>
-
-  <div class="l3k21menu">
-    <div class="l3k21menulistbody">
-      <div class="l3k21menulist">
+    <div id="header"><div class="dyv1m">
+  <div class="dyv1mtitle">
+    <div class="dyv1mtitlebody">
+      <div class="dyv1mtitlebodytitle">
+        Arge Atölyesi Web Sitemize Hoşgeldiniz
+      </div>
+      <div class="dyv1mtitlebodylang">
         <ul>
-          <a href="/tr/">Anasayfa</a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png"></a></li>
         </ul>
       </div>
     </div>
+  </div>
 
-    <div class="l3k21menucontact">
-      <div class="l3k21menucontacttitle">Bize Ulaşın</div>
+  <div class="dyv1mbody">
+    <a href="/tr"><img src="/img/logo.png" height="100" /></a>
+  </div>
 
-      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+  <div class="dyv1mmenubody">
+    <div class="dyv1mmenu">
+      <div class="dyv1mmenulistbody">
+        <div class="dyv1mmenulist">
+          <ul>
+            <a href="/tr/">Anasayfa </a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-
 <style>
-  .l3k21 {
+  .dyv1m {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@
     justify-content: center;
   }
 
-  .l3k21title {
+  .dyv1mtitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -86,7 +86,7 @@
     justify-content: center;
   }
 
-  .l3k21titlebody {
+  .dyv1mtitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -94,7 +94,24 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .l3k21body {
+  .dyv1mtitlebodytitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .dyv1mtitlebodylang {
+    width: auto;
+    margin: -5px 0px -5px 0px;
+  }
+
+  .dyv1mtitlebodylang ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .dyv1mbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -102,23 +119,30 @@
     margin: 5px 0px 5px 0px;
   }
 
-  .l3k21menu {
+  .dyv1mmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .l3k21menulist {
+  .dyv1mmenulist {
     width: calc(100% - 20px);
-    background-color: #0080c0;
+    background-color: #1170b4;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .l3k21menulist ul {
+  .dyv1mmenubody {
+    width: 100%;
+    background-color: #1170b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dyv1mmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -128,7 +152,7 @@
     overflow-x: auto;
   }
 
-  .l3k21menulist ul a {
+  .dyv1mmenulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -140,72 +164,56 @@
     white-space: nowrap;
   }
 
-  .l3k21menulist ul a:hover {
+  .dyv1mmenulist ul a:hover {
     background-color: #e0e0e0;
+    border-radius: 5px;
     color: #000;
     cursor: pointer;
   }
 
-  .l3k21menucontact {
-    background-color: #00aaff76;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
-    float: right;
-  }
-
-  .l3k21menucontacttitle {
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-  }
-
-  .l3k21menulistbody {
+  .dyv1mmenulistbody {
     width: 100%;
   }
 
   @media screen and (max-width: 1024px) {
-    .l3k21menu {
+    .dyv1mmenu {
       overflow-x: auto;
     }
 
-    .l3k21menulist ul {
+    .dyv1mmenulist ul {
       flex-direction: row;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .l3k21menulist ul a {
+    .dyv1mmenulist ul a {
       font-size: 14px;
     }
   }
-</style></div>
-    <div id="content"><div class="prj5a">
-  <div class="prj5abody">
+</style>
+</div>
+    <div id="content"><div class="ocn2q">
+  <div class="ocn2qbody">
     <img src="/img/map.png" />
 
-    <div class="prj5acontainer">
-      <div class="prj5acontainerbody">
-        <div class="prj5acontainertitle">Bize Ulaşın</div>
-        <div class="prj5acontainerlist">
+    <div class="ocn2qcontainer">
+      <div class="ocn2qcontainerbody">
+        <div class="ocn2qcontainertitle">Bize Ulaşın</div>
+        <div class="ocn2qcontainerlist">
    <div>
     <span class="material-symbols-outlined">
          phone
     </span>
   </div>
     <div>0530 000 00 00</div>
-  </div><div class="prj5acontainerlist">
+  </div><div class="ocn2qcontainerlist">
    <div>
     <span class="material-symbols-outlined">
          phone
     </span>
   </div>
     <div>0530 000 00 00</div>
-  </div><div class="prj5acontainerlist">
+  </div><div class="ocn2qcontainerlist">
    <div>
     <span class="material-symbols-outlined">
          map
@@ -216,11 +224,11 @@
       </div>
     </div>
   </div>
-  <div class="prj5a-background-overlay"></div>
+  <div class="ocn2q-background-overlay"></div>
 </div>
 
 <style>
-  .prj5a {
+  .ocn2q {
     width: 100%;
     padding: 50px 0px 50px 0px;
     display: flex;
@@ -229,13 +237,13 @@
     position: relative;
   }
 
-  .prj5acontainertitle {
+  .ocn2qcontainertitle {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 15px;
   }
 
-  .prj5acontainerlist {
+  .ocn2qcontainerlist {
     padding: 5px;
     display: flex;
     border-radius: 5px;
@@ -243,31 +251,31 @@
     gap: 15px;
   }
 
-  .prj5acontainerlist > div {
+  .ocn2qcontainerlist > div {
     display: flex;
     align-items: center;
     font-size: 18px;
   }
 
-  .prj5acontainer {
+  .ocn2qcontainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .prj5acontainerbody {
+  .ocn2qcontainerbody {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .prj5abody > * {
+  .ocn2qbody > * {
     width: 50%;
     background-color: #ffffff90;
   }
 
-  .prj5abody {
+  .ocn2qbody {
     width: calc(var(--max) - 20px);
     background-color: #e9e9e9d9;
     display: flex;
@@ -276,7 +284,7 @@
     gap: 10px;
   }
 
-  .prj5a-background-overlay {
+  .ocn2q-background-overlay {
     position: absolute;
     /* Position overlay absolutely */
     top: 0;
@@ -292,12 +300,12 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .prj5abody > * {
+    .ocn2qbody > * {
       width: 100%;
       background-color: #ffffff90;
     }
 
-    .prj5abody {
+    .ocn2qbody {
       flex-direction: column;
       gap: 20px;
     }
@@ -342,7 +350,7 @@
 <style>
   .footer {
     position: relative;
-    background: #3586ff;
+    background: #1170b4;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -406,7 +414,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233586ff;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%231170b4;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
     background-size: 1000px 102px;
   }
 

@@ -38,39 +38,39 @@
 
   
   <body>
-    <div id="header"><div class="fr0zh">
-  <div class="fr0zhtitle">
-    <div class="fr0zhtitlebody">
-      <div>Arge Atölyesi Web Sitemize Hoşgeldiniz</div>
-
-      <div></div>
-    </div>
-  </div>
-
-  <div class="fr0zhbody">
-    <a href="/tr"><img src="/img/logo.png" height="70" /></a>
-  </div>
-
-  <div class="fr0zhmenu">
-    <div class="fr0zhmenulistbody">
-      <div class="fr0zhmenulist">
+    <div id="header"><div class="pgb97">
+  <div class="pgb97title">
+    <div class="pgb97titlebody">
+      <div class="pgb97titlebodytitle">
+        Arge Atölyesi Web Sitemize Hoşgeldiniz
+      </div>
+      <div class="pgb97titlebodylang">
         <ul>
-          <a href="/tr/">Anasayfa</a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png"></a></li>
         </ul>
       </div>
     </div>
+  </div>
 
-    <div class="fr0zhmenucontact">
-      <div class="fr0zhmenucontacttitle">Bize Ulaşın</div>
+  <div class="pgb97body">
+    <a href="/tr"><img src="/img/logo.png" height="100" /></a>
+  </div>
 
-      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+  <div class="pgb97menubody">
+    <div class="pgb97menu">
+      <div class="pgb97menulistbody">
+        <div class="pgb97menulist">
+          <ul>
+            <a href="/tr/">Anasayfa </a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-
 <style>
-  .fr0zh {
+  .pgb97 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@
     justify-content: center;
   }
 
-  .fr0zhtitle {
+  .pgb97title {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -86,7 +86,7 @@
     justify-content: center;
   }
 
-  .fr0zhtitlebody {
+  .pgb97titlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -94,7 +94,24 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .fr0zhbody {
+  .pgb97titlebodytitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .pgb97titlebodylang {
+    width: auto;
+    margin: -5px 0px -5px 0px;
+  }
+
+  .pgb97titlebodylang ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .pgb97body {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -102,23 +119,30 @@
     margin: 5px 0px 5px 0px;
   }
 
-  .fr0zhmenu {
+  .pgb97menu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .fr0zhmenulist {
+  .pgb97menulist {
     width: calc(100% - 20px);
-    background-color: #0080c0;
+    background-color: #1170b4;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .fr0zhmenulist ul {
+  .pgb97menubody {
+    width: 100%;
+    background-color: #1170b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pgb97menulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -128,7 +152,7 @@
     overflow-x: auto;
   }
 
-  .fr0zhmenulist ul a {
+  .pgb97menulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -140,50 +164,34 @@
     white-space: nowrap;
   }
 
-  .fr0zhmenulist ul a:hover {
+  .pgb97menulist ul a:hover {
     background-color: #e0e0e0;
+    border-radius: 5px;
     color: #000;
     cursor: pointer;
   }
 
-  .fr0zhmenucontact {
-    background-color: #00aaff76;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
-    float: right;
-  }
-
-  .fr0zhmenucontacttitle {
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-  }
-
-  .fr0zhmenulistbody {
+  .pgb97menulistbody {
     width: 100%;
   }
 
   @media screen and (max-width: 1024px) {
-    .fr0zhmenu {
+    .pgb97menu {
       overflow-x: auto;
     }
 
-    .fr0zhmenulist ul {
+    .pgb97menulist ul {
       flex-direction: row;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .fr0zhmenulist ul a {
+    .pgb97menulist ul a {
       font-size: 14px;
     }
   }
-</style></div>
+</style>
+</div>
     <div id="content"></div>
     <div id="footer"><footer class="footer">
   <div class="waves">
@@ -223,7 +231,7 @@
 <style>
   .footer {
     position: relative;
-    background: #3586ff;
+    background: #1170b4;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -287,7 +295,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233586ff;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%231170b4;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
     background-size: 1000px 102px;
   }
 

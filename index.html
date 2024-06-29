@@ -38,39 +38,39 @@
 
   
   <body>
-    <div id="header"><div class="n7rbn">
-  <div class="n7rbntitle">
-    <div class="n7rbntitlebody">
-      <div>Arge Atölyesi Web Sitemize Hoşgeldiniz</div>
-
-      <div></div>
-    </div>
-  </div>
-
-  <div class="n7rbnbody">
-    <a href="/tr"><img src="/img/logo.png" height="70" /></a>
-  </div>
-
-  <div class="n7rbnmenu">
-    <div class="n7rbnmenulistbody">
-      <div class="n7rbnmenulist">
+    <div id="header"><div class="lp3uu">
+  <div class="lp3uutitle">
+    <div class="lp3uutitlebody">
+      <div class="lp3uutitlebodytitle">
+        Arge Atölyesi Web Sitemize Hoşgeldiniz
+      </div>
+      <div class="lp3uutitlebodylang">
         <ul>
-          <a href="/tr/">Anasayfa</a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png"></a></li>
         </ul>
       </div>
     </div>
+  </div>
 
-    <div class="n7rbnmenucontact">
-      <div class="n7rbnmenucontacttitle">Bize Ulaşın</div>
+  <div class="lp3uubody">
+    <a href="/tr"><img src="/img/logo.png" height="100" /></a>
+  </div>
 
-      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+  <div class="lp3uumenubody">
+    <div class="lp3uumenu">
+      <div class="lp3uumenulistbody">
+        <div class="lp3uumenulist">
+          <ul>
+            <a href="/tr/">Anasayfa </a><a href="/tr/corporate/">Kurumsal</a><a href="/tr/services/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/contact/">İletişim</a>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-
 <style>
-  .n7rbn {
+  .lp3uu {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@
     justify-content: center;
   }
 
-  .n7rbntitle {
+  .lp3uutitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -86,7 +86,7 @@
     justify-content: center;
   }
 
-  .n7rbntitlebody {
+  .lp3uutitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -94,7 +94,24 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .n7rbnbody {
+  .lp3uutitlebodytitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .lp3uutitlebodylang {
+    width: auto;
+    margin: -5px 0px -5px 0px;
+  }
+
+  .lp3uutitlebodylang ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .lp3uubody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -102,23 +119,30 @@
     margin: 5px 0px 5px 0px;
   }
 
-  .n7rbnmenu {
+  .lp3uumenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .n7rbnmenulist {
+  .lp3uumenulist {
     width: calc(100% - 20px);
-    background-color: #0080c0;
+    background-color: #1170b4;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .n7rbnmenulist ul {
+  .lp3uumenubody {
+    width: 100%;
+    background-color: #1170b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lp3uumenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -128,7 +152,7 @@
     overflow-x: auto;
   }
 
-  .n7rbnmenulist ul a {
+  .lp3uumenulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -140,50 +164,34 @@
     white-space: nowrap;
   }
 
-  .n7rbnmenulist ul a:hover {
+  .lp3uumenulist ul a:hover {
     background-color: #e0e0e0;
+    border-radius: 5px;
     color: #000;
     cursor: pointer;
   }
 
-  .n7rbnmenucontact {
-    background-color: #00aaff76;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
-    float: right;
-  }
-
-  .n7rbnmenucontacttitle {
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-  }
-
-  .n7rbnmenulistbody {
+  .lp3uumenulistbody {
     width: 100%;
   }
 
   @media screen and (max-width: 1024px) {
-    .n7rbnmenu {
+    .lp3uumenu {
       overflow-x: auto;
     }
 
-    .n7rbnmenulist ul {
+    .lp3uumenulist ul {
       flex-direction: row;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .n7rbnmenulist ul a {
+    .lp3uumenulist ul a {
       font-size: 14px;
     }
   }
-</style></div>
+</style>
+</div>
     <div id="content"></div>
     <div id="footer"><footer class="footer">
   <div class="waves">
@@ -223,7 +231,7 @@
 <style>
   .footer {
     position: relative;
-    background: #3586ff;
+    background: #1170b4;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -287,7 +295,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233586ff;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%231170b4;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
     background-size: 1000px 102px;
   }
 
