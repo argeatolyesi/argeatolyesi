@@ -25,17 +25,14 @@ a:visited {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   line-height: 1.2;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
-
-
 
 body {
   width: 100%;
@@ -49,7 +46,7 @@ body {
   overflow-x: hidden;
   /* Prevents horizontal overflow */
 }
- 
+
 #header {
   width: 100%;
   display: flex;
@@ -82,15 +79,13 @@ body {
   --max: 1024px;
 }
 
-
-
 @media screen and (max-width: 1024px) {
   :root {
     --max: 100% !important;
   }
 
-  .mobil-closed{
-  display: none !important;
+  .mobil-closed {
+    display: none !important;
   }
 }
 
