@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -32,29 +32,30 @@
     <script src="/src/swiper-bundle.min.js"></script>
     
   </head>
+
   <body>
-    <div id="header"><div class="e9z7x">
-  <div class="e9z7xtitle">
-    <div class="e9z7xtitlebody">
-      <div class="e9z7xtitlebodytitle">
+    <div id="header"><div class="ivo0k">
+  <div class="ivo0ktitle">
+    <div class="ivo0ktitlebody">
+      <div class="ivo0ktitlebodytitle">
         Arge Atölyesi Web Sitemize Hoşgeldiniz
       </div>
-      <div class="e9z7xtitlebodylang">
+      <div class="ivo0ktitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="e9z7xbody">
-    <a href="/tr"><img src="/img/logo.png" class="e9z7xbodylogo" /></a>
+  <div class="ivo0kbody">
+    <a href="/tr"><img src="/img/logo.png" class="ivo0kbodylogo" /></a>
   </div>
-  <div class="e9z7xmenubody">
-    <div class="e9z7xmenu">
-      <div class="e9z7xmenulistbody">
-        <div class="e9z7xmenulist">
+  <div class="ivo0kmenubody">
+    <div class="ivo0kmenu">
+      <div class="ivo0kmenulistbody">
+        <div class="ivo0kmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a class="ivo0kmenulistactive" href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/blog/">Blog</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
@@ -62,69 +63,69 @@
   </div>
 </div>
 <style>
-  .e9z7x {
+  .ivo0k {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .e9z7xtitle {
+  .ivo0ktitle {
     width: 100%;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .e9z7xtitlebody {
+  .ivo0ktitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
   }
-  .e9z7xtitlebodytitle {
+  .ivo0ktitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
-  .e9z7xtitlebodylang {
+  .ivo0ktitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
-  .e9z7xtitlebodylang ul {
+  .ivo0ktitlebodylang ul {
     display: flex;
     gap: 5px;
   }
-  .e9z7xbody {
+  .ivo0kbody {
     width: var(--max);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px 0px 5px 0px;
   }
-  .e9z7xmenu {
+  .ivo0kmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
-  .e9z7xmenulist {
+  .ivo0kmenulist {
     width: calc(100% - 20px);
     background-color: #1170b4;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .e9z7xmenubody {
+  .ivo0kmenubody {
     width: 100%;
     background-color: #1170b4;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .e9z7xmenulist ul {
+  .ivo0kmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -133,7 +134,7 @@
     padding: 0;
     overflow-x: auto;
   }
-  .e9z7xmenulist ul a {
+  .ivo0kmenulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -144,35 +145,43 @@
     display: inline-block;
     white-space: nowrap;
   }
-  .e9z7xmenulist ul a:hover {
+  .ivo0kmenulist ul a:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000;
     cursor: pointer;
   }
-  .e9z7xmenulistbody {
+
+  .ivo0kmenulistactive {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .ivo0kmenulistbody {
     width: 100%;
   }
-  .e9z7xbodylogo {
+  .ivo0kbodylogo {
     height: 100px;
     max-width: 90vw;
     max-height: 100px;
   }
   @media screen and (max-width: 1024px) {
-    .e9z7xmenu {
+    .ivo0kmenu {
       overflow-x: auto;
     }
-    .e9z7xmenulist ul {
+    .ivo0kmenulist ul {
       flex-direction: row;
     }
-    .e9z7xbodylogo {
+    .ivo0kbodylogo {
       height: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
   }
   @media screen and (max-width: 768px) {
-    .e9z7xmenulist ul a {
+    .ivo0kmenulist ul a {
       font-size: 14px;
     }
   }
